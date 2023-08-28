@@ -1,9 +1,8 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
-  height: 40vmin;
+  height: 30px;
   pointer-events: none;
 }
 
@@ -35,4 +34,11 @@
   to {
     transform: rotate(360deg);
   }
+  
+}
+.imgDetalle{
+  padding: 25px 0px 15px 15px;
+}
+.detallemascota{
+  padding: 15px 0px 15px 0px;
 }

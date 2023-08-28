@@ -1,0 +1,35 @@
+import React, { useState } from 'react'
+
+ const Footer = () => {
+  
+  const [clicks,setClicks]=useState(0);
+  const year= new Date().getFullYear;
+  const CompanyName="egg company";
+  const handleClick= ()=>{
+   setClicks(clicks + 1);
+  }
+  return (
+    <div className="container">
+        <footer className="py-3 my-4">
+       <div>     
+        <p>Clicks:{clicks}</p>
+      <button onClick={handleClick}>Click me toga </button>
+    </div>
+      <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Home</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Features</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p className="text-center text-body-secondary">&copy; {year} {CompanyName} </p>
+     
+    </footer>
+  </div>
+  
+  )
+}
+
+export default Footer
+
+
